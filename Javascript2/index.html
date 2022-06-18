@@ -1,0 +1,80 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="Static/css/style.css">
+    <title>Javascript test</title>
+</head>
+<body>
+    <div class="container-1">
+        <h2>Challenge 1: Your age in Days</h2>
+        <div class="flex-box-container-1">
+            <div>
+                <button class="btn btn-primary" onclick="ageInDays()"> Click me</button>
+            </div>
+
+            <div>
+                <button class="btn btn-danger" onclick="reset()"> reset</button>
+            </div>
+        </div>
+
+        <div class="flex-box-container-1">
+            <div id="flex-box-result"></div>
+
+        </div>
+    </div>
+
+    <div class="container-2"> 
+        <h2>Challenge 2: Cat Generator</h2>
+        <button class="btn btn-success" id="cat-generator" onclick="generateCat()">Generate Cat</button>
+        <div class=" flex-box-container-2" id="flex-cat-gen">
+ 
+        </div>
+        <button class="btn btn-danger" id="delete-cat" onclick="resetImages()"> Delete Cat</button>
+    </div>
+
+    
+
+    <div class="container-3">
+        <h2>Challenge 3: Rock, Paper, Scissors</h2>
+        <div class="flex-box-rps" id="flex-box-rps-div">
+            <img id="rock" src="Static/images/Rock_icon.webp" height=150 width=150 alt="" onclick="rpsGame(this)">
+            <img id="paper" src="Static/images/paper.png" height=150 width=150 alt="" onclick="rpsGame(this)"> 
+            <img id="scissors" src="Static/images/scissors.png" height=150 width=150 alt="" onclick="rpsGame(this)">
+        </div>
+        <button class="btn btn-success" id="play-again" onclick="rpsFrontEndReset()"> Play Again</button>
+
+    </div>
+
+    
+
+    <div class="container-4">
+        <h2 id="change my colour">Challenge 4:Change the Colour of all buttons</h2>
+
+        <div class="flex-box-pick-colour">
+            <form action="">
+                <select name="backdrop" id="background" onchange="buttonColourChange(this)">
+                    <option value="random"> Random</option>
+                    <option value="red"> Red</option>
+                    <option value="green">Green</option>
+                    <option value="reset">Reset</option>
+                </select>
+
+            </form>
+            <button class="btn btn-primary" >Hello</button>
+            <button class="btn btn-danger">Bye</button>
+            <button class="btn btn-warning">Time</button>
+            <button class="btn btn-success">Create</button>
+
+        </div>
+
+        <script src="static/js/script.js"></script>
+    
+    </div>
+    
+
+
+</body>
+</html>
